@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-One - Chemo Care Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .accordion-item.active .accordion-content { max-height: 500px; }
+        .accordion-item.active .chevron { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-leaf text-white text-xs"></i>
+                </div>
+                <span class="font-bold text-lg tracking-tight">CHEMO CARE</span>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600" id="main-nav-links">
+                <a href="#k-one" class="hover:text-green-600 transition-colors">K-One</a>
+                <a href="#kenali" class="hover:text-green-600 transition-colors">Edukasi</a>
+                <a href="#gejala" class="hover:text-green-600 transition-colors">Gejala</a>
+                <a href="#mandiri" class="hover:text-green-600 transition-colors">Mandiri</a>
+                <a href="#diskusi" class="hover:text-green-600 transition-colors">Diskusi</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="hamburger-menu-btn" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-8 text-xl font-semibold transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-gray-600"><i class="fas fa-times text-2xl"></i></button>
+            <a href="#k-one" onclick="toggleMobileMenu()">K-One</a>
+            <a href="#kenali" onclick="toggleMobileMenu()">Edukasi</a>
+            <a href="#gejala" onclick="toggleMobileMenu()">Gejala</a>
+            <a href="#mandiri" onclick="toggleMobileMenu()">Mandiri</a>
+            <a href="#diskusi" onclick="toggleMobileMenu()">Diskusi</a>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-10">
+        
+        <section id="k-one" class="mb-20 pt-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Navigasi Digital</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight text-gray-900">K-One: <span class="text-green-600">Kemoterapi</span> Online Navigation and Education</h1>
+                <p class="text-gray-500 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a href="#kenali" class="bg-green-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 transition-all">Mulai Belajar</a>
+            </div>
+            <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-[3rem] p-8">
+                <img src="https://via.placeholder.com/500x400/e2e8f0/64748b?text=K-One+Illustration" alt="Ilustrasi" class="w-full h-auto rounded-2xl shadow-xl transform rotate-2">
+            </div>
+        </section>
+
+        <section id="kenali" class="mb-20 pt-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Kenali Kemoterapi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="md:col-span-2 aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="bg-green-100 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
+                    <i class="fas fa-play-circle text-green-600 text-3xl mb-3"></i>
+                    <p class="text-green-800 text-xs font-medium">Video Pengenalan Kemoterapi</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gejala" class="mb-20 pt-10">
+            <h2 class="text-2xl font-bold mb-6">Pantau Gejala</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center bg-blue-50 rounded-full text-3xl">🦠</div>
+                    <h3 class="font-bold text-sm mb-2">Cuci tangan</h3>
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center bg-pink-50 rounded-full text-3xl">👩‍🦲</div>
+                    <h3 class="font-bold text-sm mb-2">Mual & muntah</h3>
+                    <p class="text-xs text-gray-400">Efek samping umum yang perlu dipantau secara rutin.</p>
+                </div>
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 mb-4 flex items-center justify-center bg-yellow-50 rounded-full text-3xl">🤕</div>
+                    <h3 class="font-bold text-sm mb-2">Mual ekstrem</h3>
+                    <p class="text-xs text-gray-400">Segera hubungi tim medis jika gejala terasa tidak tertahankan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mandiri" class="mb-20 pt-10">
+            <h2 class="text-3xl font-bold mb-8 text-center md:text-left">Keperawatan Mandiri</h2>
+            <div class="space-y-4 max-w-3xl">
+                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-gray-700 italic">Panduan Nutrisi Harian</span>
+                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 border-t border-gray-50">
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+                                </li>
+                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-gray-700 italic">Manajemen Aktivitas Fisik</span>
+                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 border-t border-gray-50">
+                            <ul class="space-y-3">
+                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in.
+                                </li>
+                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                                    <span class="text-green-500 mt-1">•</span>
+                                    Sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diskusi" class="bg-white p-12 rounded-[3rem] shadow-sm border border-gray-50 text-center mb-10">
+            <h2 class="text-gray-400 font-bold uppercase tracking-widest text-xs mb-4">Ruang Diskusi</h2>
+            <h3 class="text-3xl font-bold mb-4">Butuh Bantuan Lebih Lanjut?</h3>
+            <p class="text-gray-500 text-sm mb-8 max-w-md mx-auto">Hubungi tenaga ahli kami untuk mendapatkan informasi yang lebih lanjut dan terpercaya seputar perawatan kemoterapi.</p>
+            <button class="bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-sm hover:bg-blue-700 transition-all shadow-lg hover:scale-105">Mulai Diskusi Sekarang</button>
+        </section>
+
+        <footer class="mt-10 text-center pb-10">
+            <p class="text-[10px] text-gray-300 uppercase tracking-tighter">&copy; 2025 Chemo Care Project</p>
+        </footer>
+
+    </main>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            if (mobileMenu.classList.contains('-translate-x-full')) {
+                mobileMenu.classList.remove('hidden', '-translate-x-full');
+                mobileMenu.classList.add('flex', 'translate-x-0');
+            } else {
+                mobileMenu.classList.remove('flex', 'translate-x-0');
+                mobileMenu.classList.add('hidden', '-translate-x-full');
+            }
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        closeMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Accordion Functionality
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('active'));
+            
+            // Toggle clicked item
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
