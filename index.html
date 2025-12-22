@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-item.active .accordion-content { max-height: 500px; }
+        .accordion-item.active .accordion-content { max-height: 1100px; }
         .accordion-item.active .chevron { transform: rotate(180deg); }
     </style>
 </head>
@@ -29,7 +29,7 @@
                 <a href="#k-one" class="hover:text-green-600 transition-colors">K-One</a>
                 <a href="#kenali" class="hover:text-green-600 transition-colors">Edukasi</a>
                 <a href="#gejala" class="hover:text-green-600 transition-colors">Gejala</a>
-                <a href="#mandiri" class="hover:text-green-600 transition-colors">Mandiri</a>
+                <a href="#mandiri" class="hover:text-green-600 transition-colors">Perawatan Mandiri</a>
                 <a href="#diskusi" class="hover:text-green-600 transition-colors">Diskusi</a>
             </div>
 
@@ -45,7 +45,7 @@
             <a href="#k-one" onclick="toggleMobileMenu()">K-One</a>
             <a href="#kenali" onclick="toggleMobileMenu()">Edukasi</a>
             <a href="#gejala" onclick="toggleMobileMenu()">Gejala</a>
-            <a href="#mandiri" onclick="toggleMobileMenu()">Mandiri</a>
+            <a href="#mandiri" onclick="toggleMobileMenu()">Perawatan Mandiri</a>
             <a href="#diskusi" onclick="toggleMobileMenu()">Diskusi</a>
         </div>
     </nav>
@@ -70,7 +70,7 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-8">Kenali Kemoterapi</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
                 <div class="md:col-span-2 aspect-video bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MFEB1Gtt-mo?si=0Te6R3BHOFmAkm26" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MFEB1Gtt-mo?si=oIdgoJRPhzS0T8xJ&amp;start=41" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="bg-green-100 rounded-2xl flex flex-col items-center justify-center p-6 text-center">
                     <p class="text-green-800 text-xs lg:text-lg font-medium">
@@ -121,7 +121,7 @@
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/neutropenia.webp" alt="neutropenia" class="w-16 h-16 mb-4 rounded-full">
-                    <h3 class="font-bold text-sm">Resiko Infeksi</h3>
+                    <h3 class="font-bold text-sm">Risiko Infeksi</h3>
                     <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
@@ -170,6 +170,9 @@
 
         <section id="mandiri" class="mb-20 pt-10">
             <h2 class="text-3xl font-bold mb-8 text-center md:text-left">Perawatan Mandiri</h2>
+            <p class="text-gray-500 text-center md:text-left mb-8">
+                Anda dapat melakukan hal-hal berikut untuk mengurangi gejala:
+            </p>
             <div class="space-y-4">
                 <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
                     <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
@@ -213,7 +216,7 @@
                                 </li>
                                 <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
                                     <span class="text-green-500 mt-1">•</span>
-                                    Segera hubungi tenaga kesehatan bila timbul tanda infeksi seperti demam lebih dari 38oC, batuk terus-menerus, luka bernanah atau berbau, benjolan/abses, urin yang keruh, berbau busuk, maupun terasa panas saat berkemih.
+                                    Segera hubungi tenaga kesehatan bila timbul tanda infeksi seperti demam lebih dari 38°C, batuk terus-menerus, luka bernanah atau berbau, benjolan/abses, urin yang keruh, berbau busuk, maupun terasa panas saat berkemih.
                                 </li>
                                 <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
                                     <span class="text-green-500 mt-1">•</span>
@@ -225,7 +228,7 @@
                                 </li>
                                 <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
                                     <span class="text-green-500 mt-1">•</span>
-                                    Gunakan kondom ketika berhubungan seksual.ur sint occaecat cupidatat non.
+                                    Gunakan kondom ketika berhubungan seksual.
                                 </li>
                             </ul>
                         </div>
@@ -381,7 +384,7 @@
 
                 <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
                     <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Konstipasi</span>
+                        <span class="font-bold text-gray-700 italic">Sembelit</span>
                         <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
                     </button>
                     <div class="accordion-content">
@@ -397,7 +400,7 @@
                                 </li>
                                 <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
                                     <span class="text-green-500 mt-1">•</span>
-                                    Batasi makanan yang dapat memicu semberlit seperti coklat, keju, camilan asin, serta roti putih atau gandum.
+                                    Batasi makanan yang dapat memicu sembelit seperti coklat, keju, camilan asin, serta roti putih atau gandum.
                                 </li>
                                 <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
                                     <span class="text-green-500 mt-1">•</span>
@@ -557,7 +560,7 @@
         <section id="diskusi" class="bg-white p-12 rounded-[3rem] shadow-sm border border-gray-50 text-center mb-10">
             <h2 class="text-gray-400 font-bold uppercase tracking-widest text-xs mb-4">Ruang Diskusi</h2>
             <h3 class="text-3xl font-bold mb-4">Butuh Bantuan Lebih Lanjut?</h3>
-            <p class="text-gray-500 text-sm mb-8 max-w-md mx-auto">Hubungi tenaga ahli kami untuk mendapatkan informasi yang lebih lanjut dan terpercaya seputar perawatan kemoterapi.</p>
+            <p class="text-gray-500 text-sm mb-8 max-w-md mx-auto">Hubungi kami untuk informasi lebih lanjut mengenai perawatan kemoterapi.</p>
             <button class="bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-sm hover:bg-blue-700 transition-all shadow-lg hover:scale-105" onclick="openWhatsapp()">Mulai Diskusi Sekarang</button>
         </section>
 
