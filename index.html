@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-item.active .accordion-content { max-height: 1100px; }
+        .accordion-item.active .accordion-content { max-height: 1400px; }
         .accordion-item.active .chevron { transform: rotate(180deg); }
     </style>
 </head>
@@ -27,9 +27,9 @@
             
             <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600" id="main-nav-links">
                 <a href="#k-one" class="hover:text-green-600 transition-colors">K-One</a>
-                <a href="#kenali" class="hover:text-green-600 transition-colors">Edukasi</a>
-                <a href="#gejala" class="hover:text-green-600 transition-colors">Gejala</a>
-                <a href="#mandiri" class="hover:text-green-600 transition-colors">Perawatan Mandiri</a>
+                <a href="#kenali" class="hover:text-green-600 transition-colors">Kenali Kemoterapi</a>
+                <!-- <a href="#gejala" class="hover:text-green-600 transition-colors">Gejala</a> -->
+                <a href="#mandiri" class="hover:text-green-600 transition-colors">Gejala & Perawatan</a>
                 <a href="#diskusi" class="hover:text-green-600 transition-colors">Diskusi</a>
             </div>
 
@@ -43,9 +43,9 @@
         <div id="mobile-menu" class="fixed inset-0 bg-white z-40 hidden flex-col items-center justify-center space-y-8 text-xl font-semibold transform -translate-x-full transition-transform duration-300 ease-in-out">
             <button id="close-menu-btn" class="absolute top-6 right-6 text-gray-600"><i class="fas fa-times text-2xl"></i></button>
             <a href="#k-one" onclick="toggleMobileMenu()">K-One</a>
-            <a href="#kenali" onclick="toggleMobileMenu()">Edukasi</a>
-            <a href="#gejala" onclick="toggleMobileMenu()">Gejala</a>
-            <a href="#mandiri" onclick="toggleMobileMenu()">Perawatan Mandiri</a>
+            <a href="#kenali" onclick="toggleMobileMenu()">Kenali Kemoterapi</a>
+            <!-- <a href="#gejala" onclick="toggleMobileMenu()">Gejala</a> -->
+            <a href="#mandiri" onclick="toggleMobileMenu()">Gejala & Perawatan</a>
             <a href="#diskusi" onclick="toggleMobileMenu()">Diskusi</a>
         </div>
     </nav>
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section id="gejala" class="mb-20 pt-10">
+        <!-- <section id="gejala" class="mb-20 pt-10">
             <h2 class="text-2xl font-bold mb-6">Pantau Gejala</h2>
             <p class="text-gray-500 mb-8">
                 Anda Mungkin Merasakan:
@@ -95,53 +95,53 @@
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/alopecia.webp" alt="alopecia" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Kerontokan Rambut</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/diare.webp" alt="diare" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Diare</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/gangguan_seksual.webp" alt="gangguan_seksual" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Gangguan Seksual</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/kelelahan.webp" alt="kelelahan" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Kelelahan</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/konstipasi.webp" alt="konstipasi" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Sembelit</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/mukositis.webp" alt="mukositis" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Sariawan</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/neutropenia.webp" alt="neutropenia" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Risiko Infeksi</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/psikologis.webp" alt="psikologis" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Efek Samping Psikologis</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <img src="./assets/img/gejala/mual_dan_muntah.webp" alt="mual_dan_muntah" class="w-16 h-16 mb-4 rounded-full">
                     <h3 class="font-bold text-sm">Mual dan Muntah</h3>
-                    <!-- <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p> -->
+                    <p class="text-xs text-gray-400">Jaga kebersihan tangan setiap saat untuk menghindari infeksi.</p>
                 </div>
-                <!-- <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center text-center">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center bg-pink-50 rounded-full text-3xl">👩‍🦲</div>
                     <h3 class="font-bold text-sm mb-2">Mual & muntah</h3>
                     <p class="text-xs text-gray-400">Efek samping umum yang perlu dipantau secara rutin.</p>
-                </div> -->
+                </div>
             </div>
             <div class="bg-yellow-100 rounded-2xl flex flex-col md:flex-row items-center gap-4 lg:gap-8 p-6">
                 <img src="./assets/img/warning.webp" alt="warning" class="h-10 w-10">
@@ -169,393 +169,40 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="mandiri" class="mb-20 pt-10">
-            <h2 class="text-3xl font-bold mb-8 text-center md:text-left">Perawatan Mandiri</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center md:text-left">Gejala & Perawatan Mandiri</h2>
             <p class="text-gray-500 text-center md:text-left mb-8">
-                Anda dapat melakukan hal-hal berikut untuk mengurangi gejala:
+                Berikut adalah gejala dan cara perawatannya:
             </p>
-            <div class="space-y-4">
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Risiko Infeksi (Neutropenia)</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Mengurangi aktivitas di tempat ramai atau pertemuan yang berisiko menularkan penyakit.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Menjauhi orang yang sedang sakit, termasuk dengan memakai masker.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Tidak berbagi barang pribadi, terutama perlengkapan mandi.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Menjaga kebersihan dengan mandi setiap hari bila mampu dan mencuci tangan dengan sabun antimikroba sebelum makan dan minum, sesudah menyentuh hewan, setelah berjabat tangan, sesudah keluar dari rumah, serta sesudah memakai toilet.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari minuman yang mudah basi dan berada pada suhu ruang lebih dari satu jam.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Terapkan keamanan pangan saat mengolah makanan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Cuci buah dan sayur sebelum dikonsumsi.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Pantau suhu tubuh setiap hari dan setiap kali terasa tidak enak badan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Segera hubungi tenaga kesehatan bila timbul tanda infeksi seperti demam lebih dari 38°C, batuk terus-menerus, luka bernanah atau berbau, benjolan/abses, urin yang keruh, berbau busuk, maupun terasa panas saat berkemih.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Minum obat sesuai anjuran dokter.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan sarung tangan saat berkebun, menangani tanaman hias, atau membersihkan kotoran hewan (jika terpaksa).
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan kondom ketika berhubungan seksual.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Mual dan Muntah</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Minum obat anti mual sesuai resep sekitar 1 jam sebelum makan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Memilih camilan kering yang ringan, seperti biskuit tawatr atau roti kering
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Makan lebih sering dengan porsi kecil, 5 - 6 x/hari.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Tidak minum terlalu banyak saat makan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari langsung berbaring setelah makan, tunggu setidaknya 30 menit.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Pilih jenis makanan dan minuman bersuhu ruang.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Jauhi makanan yang terlalu berbumbu, berlemak, atau berbau tajam.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Mengonsumsi es buah, es potong, atau permen mint.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Sariawan</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Periksa seluruh rongga mulut secara rutin, termasuk langit-langit, bawah lidah, diantara gigi dan pipi.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Sikat gigi dan lidah dengan sikat lembut atau spons setidaknya setiap 8 jam dan setelah makan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari obat kumur yang mengandung alkohol.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Berkumur dengan air bersuhu ruang, larutan garam, atau campuran garam dan soda secara minimal empat kali sehari dan sesuai kebutuhan bila terdapat perubahan pada rongga mulut.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Cukupi asupan cairan, minum minimal 2 liter air per hari bila tidak ada batasan medis.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Minum obat yang diresepkan secara teratur.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan pelembab berbahan dasar air ke bibir sesuai kebutuhan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan saliva buatan atau pelembab mulut sesuai kebutuhan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Jauhi rokok atau minuman beralkohol
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari makanan pedas, asin, asam, kering, atau keras.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Berhati-hati saat mengonsumsi makanan panas agar tidak terjadi luka bakar.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Bila memakai gigi palsu, jaga kebersihan dan pastikan ukuran yang sesuai.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Kerontokan Rambut</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Pahami bahwa kerontokan rambut hanya sementara dan akan pulih setelah kemoterapi selesai.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Jauhi sinar matahari langsung pada kepala dengan topi atau penutup kepala lainnnya.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan tabir surya untuk melindungi kulit kepala dari paparan  sinar matahari.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan wig untuk membantu menjaga penampilan dan rasa percaya diri.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Pangkas rambut lebih pendek agar lebih nyaman.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Lakukan dengan lembut saat mencuci, menyisir, dan mengeringkan rambut.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Jauhi produk kimia atau pewarna rambut selama masa perawatan.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Sembelit</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Minum obat sesuai anjuran dokter.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Cukupi asupan cairan 8-10 gelas atau ± 2 liter/hari, seperti air putih, jus tanpa ampas, susu, atau teh.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Batasi makanan yang dapat memicu sembelit seperti coklat, keju, camilan asin, serta roti putih atau gandum.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Tingkatkan asupan yang berserat, seperti sayur dan buah.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Lakukan aktivitas fisik ringan, seperti berjalan santai atau berenang.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Diare</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Konsumsi obat sesuai resep dokter.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Tingkatkan asupan cairan sekitar 8-10 gelas/hari, seperti air putih, teh, jus tanpa ampas, minuman elektrolit, atau kuah bening sayuran.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari makanan dan minuman yang memperberat diare, seperti susu tinggi laktosa, kopi, alkohol, makanan berlemak, gorengan, pedas, kacang-kacangan, coklat, serta sayur dan buah penghasil gas, seperti brokoli, kembangkol, kol, kale, bawang merah, bawang putih, daun bawang.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Saat diare berkurang, pilih makanan rendah serat seperti pisang, jus tanpa ampas, sayur lunak, ayam tanpa kulit, dan biskuit untuk pemulihan energi dan protein.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Segera hubungi tenaga kesehatan jika diare tidak membaik atau memerlukan penanganan lebih lanjut.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Kelelahan</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Susun dan batasi kegitan harian yang penting dan disukai.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Beristirahat saat lelah dan minta bantuan orang lain untuk tugas yang berat.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Lakukan olahraga ringan secara teratur, seperti berjalan 20-30 menit, 3-5 x/minggu.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Makan teratur dalam porsi kecil, sekitar 6x/hari dengan makanan tinggi kalori dan protein.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Tidur dengan waktu yang cukup, minimal 8 jam perhari.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Bangun secara perlahan dari posisi berbaring untuk mencegah rasa pusing.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Gangguan seksual</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Pakai celana dalam berbahan katun.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Hindari pakaian dalam yang ketat.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan pelumas berhubungan seksual bila diperlukan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Lakukan aktivitas fisik teratur seperti berjalan kaki, bersepeda berenang.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Kelola stress dengan relaksasi, seperti yoga, meditasi, atau kegiatan ibadah.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Gunakan kondom saat berhubungan seksual. karena obat kemoterapi dapat terkandung dalam cairan sperma.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Luangkan waktu untuk kegiatan yang mempererat hubungan dengan pasangan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Bangun komunikasi yang jujur dan terbuka dengan pasangan, terkait  perasaan dan kebutuhan masing-masing
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
-                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
-                        <span class="font-bold text-gray-700 italic">Efek Samping Psikologis</span>
-                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="p-6 pt-0 border-t border-gray-50">
-                            <ul class="space-y-3">
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Psikoedukasi: Memberikan informasi yang benar dan mudah dipahami tentang kanker, pengobatan, serta dampaknya agar pasien lebih memahami kondisi yang dialami, mampu mengelola emosi, dan memiliki strategi koping yang lebih baik.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Teknik Relaksasi: Latihan seperti guided imagery (imajinasi terbimbing) dan napas dalam untuk membantu tubuh dan pikiran menjadi lebih tenang, mengurangi stres, serta menurunkan kecemasan selama menjalani pengobatan.
-                                </li>
-                                <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
-                                    <span class="text-green-500 mt-1">•</span>
-                                    Teknik Mindfulness: Latihan fokus pada pernapasan dan kesadaran terhadap kondisi saat ini tanpa menghakimi, yang bertujuan menenangkan pikiran, mengurangi kecemasan, dan menurunkan distress psikologis.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div id="gejala-perawatan-section" class="space-y-4 mb-6">
+                <!-- Generated with javascript -->
+            </div>
+            <div class="bg-yellow-100 rounded-2xl flex flex-col md:flex-row items-center gap-4 lg:gap-8 p-6">
+                <img src="./assets/img/warning.webp" alt="warning" class="h-10 w-10">
+                <div>
+                    <p class="text-yellow-800 text-xs lg:text-lg font-medium text-center md:text-left mb-2">
+                        Tanda gejala darurat yang harus segera ke RS :
+                    </p>
+                    <ul>
+                        <li class="flex gap-3 text-xs lg:text-lg text-yellow-800 leading-relaxed">
+                            <span class="text-green-500 mt-1">•</span>
+                            Tiba-tiba merasa sesak napas saat melakukan aktivitas ringan
+                        </li>
+                        <li class="flex gap-3 text-xs lg:text-lg text-yellow-800 leading-relaxed">
+                            <span class="text-green-500 mt-1">•</span>
+                            Suhu tubuh Anda mencapai 38.5°C atau lebih
+                        </li>
+                        <li class="flex gap-3 text-xs lg:text-lg text-yellow-800 leading-relaxed">
+                            <span class="text-green-500 mt-1">•</span>
+                            Mengalami diare tiga kali atau lebih dalam satu hari
+                        </li>
+                        <li class="flex gap-3 text-xs lg:text-lg text-yellow-800 leading-relaxed">
+                            <span class="text-green-500 mt-1">•</span>
+                            Muntah lima kali dalam satu hari dan tidak dapat minum apa pun
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -590,6 +237,172 @@
 
         hamburgerBtn.addEventListener('click', toggleMobileMenu);
         closeMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // looping gejala & perawatan
+        const highlightClass = "font-bold text-base"
+        const symptoms = [
+            {
+                title: 'Risiko Infeksi (Neutropenia)',
+                img: './assets/img/gejala/neutropenia.webp',
+                treatments: [
+                    `🚫 <span class="${highlightClass}">Mengurangi aktivitas di tempat ramai atau pertemuan</span> yang berisiko menularkan penyakit. 👥`,
+                    `😷 <span class="${highlightClass}">Menjauhi orang yang sedang sakit</span>, termasuk dengan memakai masker. 🤒`,
+                    `🚿 <span class="${highlightClass}">Tidak berbagi barang pribadi</span>, terutama perlengkapan mandi. 🧴`,
+                    `🛁 <span class="${highlightClass}">Mandi setiap hari bila mampu</span>. 🧼`,
+                    `🧼 <span class="${highlightClass}">Bersihkan ketiak dan area perineum dua kali sehari</span> memakai <span class="${highlightClass}">sabun antimikroba</span>. ✋`,
+                    `🧴 <span class="${highlightClass}">Mencuci tangan dengan sabun antimikroba</span> sebelum makan dan minum, sesudah menyentuh hewan, setelah berjabat tangan, sesudah keluar dari rumah, serta sesudah memakai toilet. 🥤`,
+                    `⏰ <span class="${highlightClass}">Hindari minuman yang mudah basi</span> dan telah dibiarkan pada <span class="${highlightClass}">suhu ruang lebih dari satu jam</span>. 🔒`,
+                    `🍳 <span class="${highlightClass}">Terapkan keamanan pangan</span> saat mengolah makanan. 🥬`,
+                    `💧 <span class="${highlightClass}">Cuci buah dan sayur sebelum dikonsumsi</span>. 🐾`,
+                    `🧤 <span class="${highlightClass}">Tidak membersihkan kotoran hewan peliharaan</span>. Gunakan sarung tangan bila terpaksa. 🌡️`,
+                    `📋 <span class="${highlightClass}">Pantau suhu tubuh setiap hari</span> dan setiap kali terasa tidak enak badan. 🚨`,
+                    `📞 <span class="${highlightClass}">Segera hubungi tenaga kesehatan</span> bila timbul <span class="${highlightClass}">tanda infeksi</span> seperti demam lebih dari 38°C, batuk terus-menerus, luka bernanah atau berbau, benjolan/abses, urin yang keruh, berbau busuk, maupun terasa panas saat berkemih. 💊`,
+                    `✔️ <span class="${highlightClass}">Minum obat sesuai anjuran dokter</span>. 🌱`,
+                    `🧤 <span class="${highlightClass}">Gunakan sarung tangan saat berkebun</span> menangani tanaman hias. ❤️`,
+                    `🛡️ <span class="${highlightClass}">Gunakan kondom ketika berhubungan seksual</span>. 🛡️`,
+                ]
+            },
+            {
+                title: 'Mual dan Muntah',
+                img: './assets/img/gejala/mual_dan_muntah.webp',
+                treatments: [
+                    `💊 <span class="${highlightClass}">Minum obat anti mual sesuai resep</span> sekitar <span class="${highlightClass}">1 jam sebelum makan</span>. ⏱️`,
+                    `🍪 <span class="${highlightClass}">Memilih camilan kering yang ringan</span>, seperti biskuit tawar atau roti kering. 🥖`,
+                    `🍽️ <span class="${highlightClass}">Makan lebih sering dengan porsi kecil</span>, 5–6 kali per hari. 🔄`,
+                    `🚫 <span class="${highlightClass}">Tidak minum terlalu banyak saat makan</span>. 🥤`,
+                    `🛌 <span class="${highlightClass}">Hindari langsung berbaring setelah makan</span>, tunggu setidaknya 30 menit. ⏳`,
+                    `🌡️ <span class="${highlightClass}">Pilih jenis makanan dan minuman bersuhu ruang</span>. 🍵`,
+                    `🌶️ <span class="${highlightClass}">Jauhi makanan yang terlalu berbumbu, berlemak, atau berbau tajam</span>. 🚫`,
+                    `🍧 <span class="${highlightClass}">Mengonsumsi es buah, es potong, atau permen mint</span>. ❄️`,
+                ]
+            },
+            {
+                title: 'Sariawan',
+                img: './assets/img/gejala/mukositis.webp',
+                treatments: [
+                    `🔍 <span class="${highlightClass}">Periksa seluruh rongga mulut secara rutin</span>, termasuk langit-langit, bawah lidah, di antara gigi dan pipi. 🦷`,
+                    `🪥 <span class="${highlightClass}">Sikat gigi dan lidah dengan sikat lembut atau spons</span> setidaknya setiap 8 jam dan setelah makan. ⏰`,
+                    `🚫 <span class="${highlightClass}">Hindari obat kumur yang mengandung alkohol</span>. 🍺`,
+                    `💦 <span class="${highlightClass}">Berkumur dengan air bersuhu ruang, larutan garam, atau campuran garam dan soda</span> minimal empat kali sehari. 🔁`,
+                    `🚰 <span class="${highlightClass}">Cukupi asupan cairan</span>, minum minimal 2 liter air per hari bila tidak ada batasan medis. 💧`,
+                    `💊 <span class="${highlightClass}">Minum obat yang diresepkan secara teratur</span>. ✔️`,
+                    `👄 <span class="${highlightClass}">Gunakan pelembab berbahan dasar air ke bibir</span> sesuai kebutuhan. 🧴`,
+                    `😮 <span class="${highlightClass}">Gunakan saliva buatan atau pelembab mulut</span> sesuai kebutuhan. 🧴`,
+                    `🚫 <span class="${highlightClass}">Jauhi rokok atau minuman beralkohol</span>. 🌶️`,
+                    `🍋 <span class="${highlightClass}">Hindari makanan pedas, asin, asam, kering, atau keras</span>. 🔥`,
+                    `⚠️ <span class="${highlightClass}">Berhati-hati saat mengonsumsi makanan panas</span> agar tidak terjadi luka bakar. 😁`,
+                    `🦷 <span class="${highlightClass}">Bila memakai gigi palsu, jaga kebersihan dan pastikan ukuran yang sesuai</span>. 🦷`,
+                ]
+            },
+            {
+                title: 'Kerontokan Rambut',
+                img: './assets/img/gejala/alopecia.webp',
+                treatments: [
+                    `💡 <span class="${highlightClass}">Pahami bahwa kerontokan rambut hanya sementara</span> dan akan pulih setelah kemoterapi selesai. ☀️`,
+                    `👒 <span class="${highlightClass}">Jauhi sinar matahari langsung pada kepala</span> dengan topi atau penutup kepala lainnya. 🧴`,
+                    `🛡️ <span class="${highlightClass}">Gunakan tabir surya untuk melindungi kulit kepala</span> dari paparan sinar matahari. 🎀`,
+                    `😊 <span class="${highlightClass}">Gunakan wig</span> untuk membantu menjaga penampilan dan rasa percaya diri. ✂️`,
+                    `👍 <span class="${highlightClass}">Pangkas rambut lebih pendek</span> agar lebih nyaman. 🤲`,
+                    `💆‍♀️ <span class="${highlightClass}">Lakukan dengan lembut saat mencuci, menyisir, dan mengeringkan rambut</span>. 🚫`,
+                    `⚠️ <span class="${highlightClass}">Jauhi produk kimia atau pewarna rambut</span> selama masa perawatan. ⚠️`,
+                ]
+            },
+            {
+                title: 'Sembelit',
+                img: './assets/img/gejala/konstipasi.webp',
+                treatments: [
+                    `💊 <span class="${highlightClass}">Minum obat sesuai anjuran dokter</span>. ✔️`,
+                    `🚰 <span class="${highlightClass}">Cukupi asupan cairan 8–10 gelas atau ± 2 liter per hari</span>, seperti air putih, jus tanpa ampas, susu, atau teh. 🥛`,
+                    `🚫 <span class="${highlightClass}">Batasi makanan yang dapat memicu sembelit</span>, seperti cokelat, keju, camilan asin, serta roti putih atau gandum. 🍫`,
+                    `🥦 <span class="${highlightClass}">Tingkatkan asupan berserat</span>, seperti sayur dan buah. 🍎`,
+                    `🚶‍♂️ <span class="${highlightClass}">Lakukan aktivitas fisik ringan</span>, seperti berjalan santai atau berenang. 🏊‍♀️`,
+                ]
+            },
+            {
+                title: 'Diare',
+                img: './assets/img/gejala/diare.webp',
+                treatments: [
+                    `💊 <span class="${highlightClass}">Konsumsi obat sesuai resep dokter</span>. ✔️`,
+                    `🚰 <span class="${highlightClass}">Tingkatkan asupan cairan sekitar 8–10 gelas per hari</span>, seperti air putih, teh, jus tanpa ampas, minuman elektrolit, atau kuah bening sayuran. 🧂`,
+                    `🚫 <span class="${highlightClass}">Hindari makanan dan minuman yang memperberat diare</span>, seperti susu tinggi laktosa, kopi, alkohol, makanan berlemak, gorengan, pedas, kacang-kacangan, cokelat, serta sayur dan buah penghasil gas. ⚠️`,
+                    `🍌 <span class="${highlightClass}">Saat diare berkurang, pilih makanan rendah serat</span> seperti pisang, jus tanpa ampas, sayur lunak, ayam tanpa kulit, dan biskuit. 🍗`,
+                    `📞 <span class="${highlightClass}">Segera hubungi tenaga kesehatan</span> jika diare tidak membaik atau memerlukan penanganan lebih lanjut. 🚨`,
+                ]
+            },
+            {
+                title: 'Kelelahan',
+                img: './assets/img/gejala/kelelahan.webp',
+                treatments: [
+                    `📝 <span class="${highlightClass}">Susun dan batasi kegiatan harian</span> yang penting dan disukai. ⭐`,
+                    `🛑 <span class="${highlightClass}">Beristirahat saat lelah</span> dan <span class="${highlightClass}">minta bantuan orang lain</span> untuk tugas yang berat. 🤝`,
+                    `🚶‍♀️ <span class="${highlightClass}">Lakukan olahraga ringan secara teratur</span>, seperti berjalan 20–30 menit, 3–5 kali per minggu. ⏱️`,
+                    `🍽️ <span class="${highlightClass}">Makan teratur dalam porsi kecil</span>, sekitar 6 kali per hari dengan makanan <span class="${highlightClass}">tinggi kalori dan protein</span>. 🥩`,
+                    `🛌 <span class="${highlightClass}">Tidur dengan waktu yang cukup</span>, minimal 8 jam per hari. 🌙`,
+                    `🧍 <span class="${highlightClass}">Bangun secara perlahan dari posisi berbaring</span> untuk mencegah rasa pusing. ⚠️`,
+                ]
+            },
+            {
+                title: 'Gangguan seksual',
+                img: './assets/img/gejala/gangguan_seksual.webp',
+                treatments: [
+                    `👙 <span class="${highlightClass}">Pakai celana dalam berbahan katun</span>. 🌿`,
+                    `🚫 <span class="${highlightClass}">Hindari pakaian dalam yang ketat</span>. ⚠️`,
+                    `💧 <span class="${highlightClass}">Gunakan pelumas saat berhubungan seksual</span> bila diperlukan. 💕`,
+                    `🚴 <span class="${highlightClass}">Lakukan aktivitas fisik teratur</span>, seperti berjalan kaki, bersepeda, atau berenang. 🏃‍♀️`,
+                    `🧘 <span class="${highlightClass}">Kelola stres dengan relaksasi</span>, seperti yoga, meditasi, atau kegiatan ibadah. ☮️`,
+                    `🛡️ <span class="${highlightClass}">Gunakan kondom saat berhubungan seksual</span>, karena obat kemoterapi dapat terkandung dalam cairan sperma. ⚠️`,
+                    `🤝 <span class="${highlightClass}">Luangkan waktu untuk kegiatan yang mempererat hubungan dengan pasangan</span>. 💞`,
+                    `🗣️ <span class="${highlightClass}">Bangun komunikasi yang jujur dan terbuka dengan pasangan</span>, terkait perasaan dan kebutuhan masing-masing. 💬`,
+                ]
+            },
+            {
+                title: 'Efek Samping Psikologis',
+                img: './assets/img/gejala/psikologis.webp',
+                treatments: [
+                    `📘 <span class="${highlightClass}">Psikoedukasi</span> 🧩`,
+                    `🌬️ <span class="${highlightClass}">Teknik relaksasi</span> 😌`,
+                    `🧘‍♂️ <span class="${highlightClass}">Teknik mindfulness</span>`,
+                ]
+            }
+        ];
+
+        const gejalaPerawatanSection = document.getElementById('gejala-perawatan-section');
+
+        let symptomHtml = "";
+        for ( symptom of symptoms ) {
+            let treatmentHtml = "";
+            for ( treatment of symptom.treatments ) {
+                treatmentHtml += `
+                    <li class="flex gap-3 text-sm text-gray-500 leading-relaxed">
+                        <span class="text-green-500 mt-1">•</span>
+                        <div>
+                            ${treatment}
+                        </div>
+                    </li>
+                `;
+            }
+
+            symptomHtml += `
+                <div class="accordion-item bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm">
+                    <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleAccordion(this)">
+                        <div class="flex items-center gap-8">
+                            <img src="${symptom.img}" alt="${symptom.title}" class="w-16 h-16 rounded-full">
+                            <span class="font-bold text-gray-700 italic">${symptom.title}</span>
+                        </div>
+                        <i class="fas fa-chevron-down chevron transition-transform duration-300 text-gray-400"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 border-t border-gray-50">
+                            <ul class="space-y-3">
+                                ${treatmentHtml}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        gejalaPerawatanSection.innerHTML = symptomHtml;
 
         // Accordion Functionality
         function toggleAccordion(button) {
